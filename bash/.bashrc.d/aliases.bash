@@ -16,14 +16,6 @@ alias lart='ls -1aFt modified -s modified'	#'ls -1Fcaert'
 alias lrt='ls -1Ft modified -s modified'	#'ls -1Fcrt'
 
 alias gcd='cd "$(git rev-parse --show-toplevel)"'
-alias pp='
-    ls -D $PROJECTS -t modified --sort newest |
-    fzf --preview "
-        onefetch $PROJECTS/{} 2>/dev/null;
-        exa -al $PROJECTS/{};
-        bat --color always $PROJECTS/{}/README.md 2>/dev/null
-    "
-'
 alias cat='bat -p'
 
 ## Shorter commands

@@ -16,5 +16,4 @@ make deploy
 ```sh
 stow --target $(HOME) --adopt */
 git restore .
-stow --target $(HOME) */
 ``````

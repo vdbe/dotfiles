@@ -8,7 +8,6 @@ stow :
 deploy :
 	stow --target $(HOME) --verbose $(stow_dirs) --adopt $(stow_dirs)
 	git restore .
-	stow --target $(HOME) --verbose $(stow_dirs)
 
 .PHONY : stow-verbose
 # verbosity goes from 0 to 4
